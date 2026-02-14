@@ -1,0 +1,9 @@
+[build]
+  publish = "."
+  command = "echo 'No build required - static site'"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cross-Origin-Embedder-Policy = "require-corp"
+    Cross-Origin-Opener-Policy = "same-origin"
